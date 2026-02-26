@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Custom CSS Variables */
+:root {
+  --background: 250 250 250;
+  --foreground: 23 23 23;
+  --muted: 245 245 245;
+  --muted-foreground: 115 115 115;
+  --border: 229 229 229;
+  --primary: 23 23 23;
+  --primary-foreground: 250 250 250;
+  --secondary: 245 245 245;
+  --secondary-foreground: 23 23 23;
+  --accent: 245 245 245;
+  --accent-foreground: 23 23 23;
+  --destructive: 239 68 68;
+  --destructive-foreground: 250 250 250;
+  --ring: 23 23 23;
+  --radius: 0.5rem;
+}
+
+/* Base styles */
+* {
+  border-color: rgb(var(--border));
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--muted-foreground));
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
