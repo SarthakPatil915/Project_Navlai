@@ -63,8 +63,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl md:text-6xl">
-              Make a Difference in
-              <span className="block text-neutral-700">Your Community</span>
+              Setting Trends That  
+              <span className="block text-neutral-700">Actually Matters!</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-600">
               Join local events, connect with like-minded people, and create positive change 
