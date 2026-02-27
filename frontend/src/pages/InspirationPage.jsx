@@ -3,6 +3,7 @@ import inspiration2 from '@/assets/img2.jpeg'
 import inspiration3 from '@/assets/img3.jpeg'
 import inspiration4 from '@/assets/img4.jpeg'
 import inspiration5 from '@/assets/img5.jpeg'
+import inspiration6 from '@/assets/img6.jpeg'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { User, Leaf, Award, Globe, Users } from 'lucide-react'
@@ -50,6 +51,14 @@ const inspirations = [
     tag: 'Global',
     author: 'Habitat for Humanity',
   },
+  {
+  img: inspiration6,
+  title: 'Sidiously: Transforming Social Media Influence Into Real-World Impact',
+  desc: `Siddhesh Lokare, popularly known as Sidiously, is a leading Indian social impact storyteller, content creator, and entrepreneur. Through his powerful digital presence, he drives large-scale humanitarian initiatives across India. His viral campaign 'Mission 30303' aimed to raise ₹3 crore in 30 days to transform 30 under-resourced rural schools in Maharashtra. With a community of over 1.8 million followers, he has helped raise more than ₹7 crore for various social causes. Siddhesh is the Founder of Kindly Club and serves as Director at CreateTogether Foundation, focusing on education and student empowerment. In December 2025, he received the Influencer for a Social Cause Award at the Crystal Shine Awards for his outstanding contributions.`,
+  icon: Users,
+  tag: 'Social Impact',
+  author: 'Siddhesh Lokare',
+},
 ]
 
 export default function InspirationPage() {
