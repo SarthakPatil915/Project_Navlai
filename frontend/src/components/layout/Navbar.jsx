@@ -4,6 +4,7 @@ import { useAuthStore } from '@/app/store'
 import { Button } from '@/components/ui/Button'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/utils/cn'
+import logoNew from '@/assets/logo-new.png'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,9 +21,17 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/60">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="text-xl font-semibold text-neutral-900">
-          Navlai
-        </Link>
+        <div className="flex items-center gap-2">
+          <img 
+            src={logoNew}
+            alt="Navlai Logo"
+            width="80"
+            height="80"
+          />
+          <Link to="/" className="text-xl font-semibold text-neutral-900">
+            Navlai
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 md:flex">
