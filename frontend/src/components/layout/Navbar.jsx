@@ -29,7 +29,7 @@ export default function Navbar() {
             height="80"
           />
           <Link to="/" className="text-xl font-semibold text-neutral-900">
-            Navlai
+            {/* Navlai */}
           </Link>
         </div>
 
